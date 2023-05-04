@@ -19,7 +19,9 @@ module "work_corporate_site_stage_request" {
     change_reason       = "Staging consulting website"
   }
 
-  custom_fields = {} # If being used for customisation pipeline or IAM SSO, for example
+  custom_fields = {
+    "control-plane" = var.CONTROL_PLANE_ACCOUNT_ID
+  } # If being used for customisation pipeline or IAM SSO, for example
 
   account_customizations_name = "work-corporate-site" # Declare in customisation repo
 }
