@@ -1,4 +1,4 @@
-module "work_caretaker-saas_stage_request" {
+module "work_caretaker_saas_stage_request" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
