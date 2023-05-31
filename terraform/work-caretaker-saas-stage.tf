@@ -2,8 +2,8 @@ module "work_caretaker_saas_stage_request" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "work-caretaker-saas-stage@grendel-consulting.com" # Google Groups, must be unique
-    AccountName               = "work-caretaker-saas-stage"
+    AccountEmail              = "work-caretaker-saas-test@grendel-consulting.com" # Google Groups, must be unique
+    AccountName               = "work-caretaker-saas-test"
     ManagedOrganizationalUnit = "Workloads"
     SSOUserEmail              = "operations@grendel-consulting.com" # Default ops email
     SSOUserFirstName          = "Operations"
