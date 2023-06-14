@@ -20,7 +20,9 @@ module "work_onibi_site_stage_request" {
   }
 
   custom_fields = {
-    "control-plane" = var.CONTROL_PLANE_ACCOUNT_ID
+    "control-plane"    = var.CONTROL_PLANE_ACCOUNT_ID
+    "steampipe-cloud"  = var.STEAMPIPE_ACCOUNT_ID
+    "steampipe-secret" = var.STEAMPIPE_EXTERNAL_ID
   } # If being used for customisation pipeline or IAM SSO, for example
 
   account_customizations_name = "work-onibi-site" # Declare in customisation repo
