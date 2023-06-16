@@ -11,7 +11,8 @@ module "work_corporate_site_stage_request" {
   }
 
   account_tags = { # If Org tags being used
-    "Environment" = "Stage"
+    "Environment" = "Staging"
+    "Owner"       = "Central"
   }
 
   change_management_parameters = {
@@ -21,6 +22,9 @@ module "work_corporate_site_stage_request" {
 
   custom_fields = {
     "control-plane"    = var.CONTROL_PLANE_ACCOUNT_ID
+    "security-contact" = var.SECURITY_NAMED_CONTACT
+    "security-email"   = var.SECURITY_EMAIL
+    "security-phone"   = var.SECURITY_PHONE
     "steampipe-cloud"  = var.STEAMPIPE_ACCOUNT_ID
     "steampipe-secret" = var.STEAMPIPE_EXTERNAL_ID
   } # If being used for customisation pipeline or IAM SSO, for example
