@@ -10,7 +10,10 @@
 #     SSOUserLastName           = "Controller"
 #   }
 
-#   account_tags = {} # If Org tags being used
+#   account_tags = {{ # If Org tags being used
+#    "Environment" = "Dev"
+#    "Owner"       = "Project"
+#  }
 
 #   change_management_parameters = {
 #     change_requested_by = "ramirezj"
@@ -18,6 +21,9 @@
 #   }
 
 #   custom_fields = {
+#     "security-contact" = var.SECURITY_NAMED_CONTACT
+#     "security-email"   = var.SECURITY_EMAIL
+#     "security-phone"   = var.SECURITY_PHONE
 #     "steampipe-cloud"  = var.STEAMPIPE_ACCOUNT_ID
 #     "steampipe-secret" = var.STEAMPIPE_EXTERNAL_ID
 # } # If being used for customisation pipeline or IAM SSO, for example
