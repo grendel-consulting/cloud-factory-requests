@@ -26,6 +26,9 @@ module "infra_control_plane_request" {
     "security-phone"   = var.SECURITY_PHONE
     "steampipe-cloud"  = var.STEAMPIPE_ACCOUNT_ID
     "steampipe-secret" = var.STEAMPIPE_EXTERNAL_ID
+    "aikidodev-cloud"  = var.AIKIDODEV_ACCOUNT_ID
+    "aikidodev-secret" = var.AIKIDODEV_EXTERNAL_ID
+
   } # If being used for customisation pipeline or IAM SSO, for example
 
   account_customizations_name = "infra-control-plane" # Declare in customisation repo

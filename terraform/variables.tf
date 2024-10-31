@@ -28,3 +28,14 @@ variable "STEAMPIPE_EXTERNAL_ID" {
   description = "External ID for the Steampipe Cloud environment, from Terraform Cloud"
   sensitive   = true
 }
+
+variable "AIKIDODEV_ACCOUNT_ID" {
+  type        = string
+  description = "AWS Account ID for the Aikido Security environment, from Terraform Cloud"
+}
+
+variable "AIKIDODEV_EXTERNAL_ID" {
+  type        = string
+  description = "External ID for the Aikido Security environment, from Terraform Cloud"
+  sensitive   = true
+}
