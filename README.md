@@ -1,4 +1,6 @@
 # Cloud Factory Requests
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/grendel-consulting/cloud-factory-requests/badge)](https://scorecard.dev/viewer/?uri=github.com/grendel-consulting/cloud-factory-requests)
+
 
 Boilerplate configuration for creating requests for new AWS Accounts through the Account Factory for Terraform module. It's pipeline requires the specific structure used and the included submodule to define a DynamoDB table item with the account specifications.
 
